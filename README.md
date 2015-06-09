@@ -1,10 +1,28 @@
-uClinux for STM32F429IDISCO
+uClinux for STM32F429I-DISCO Board
 ======================
 This initial project is a fork from jserv/stm32f429-linux-builder.
 Both of the kernel and u-boot fork from robutest/uclinux,u-boot.
 
+The first step is to integrate Lefinnois and AdrianHuang/uclinux source stuff:
+
+* [Lefinnois](https://github.com/Lefinnois/stm32f429-linux-builder)
+* [AdrianHuang](https://github.com/AdrianHuang/uclinux)
 
 
+This project is just play for fun, add some stuff, integrate something good.
+
+
+
+TODO list:
+* Add an usart port to integrate something communication module (Bluetooth, WIFI). 
+* Add spi driver to communicate with L3GD20 3-axis gyroscope.  
+
+
+Done:
+
+
+
+The following are original README.md from jserv/stm32f42p-linux-builder
 
 stm32f429-linux-builder
 ======================
