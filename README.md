@@ -1,6 +1,7 @@
 uClinux for STM32F429IDISCO
 ======================
-This is a fork from from jserv/stm32f429-linux-builder.
+This initial project is a fork from jserv/stm32f429-linux-builder.
+Both of the kernel and u-boot fork from robutest/uclinux,u-boot.
 
 
 
