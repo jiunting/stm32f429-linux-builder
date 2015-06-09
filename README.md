@@ -20,7 +20,7 @@ This project is just play for fun, adding some stuff, integrating something good
 
 
 TODO list:
-* Add an usart port to integrate something communication module (Bluetooth, WIFI). 
+* Add an usart port to integrate communication module (Bluetooth, WIFI). 
 * Add spi driver to communicate with L3GD20 3-axis gyroscope.  
 
 
