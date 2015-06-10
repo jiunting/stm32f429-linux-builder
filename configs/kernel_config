@@ -226,6 +226,21 @@ CONFIG_STM32_USART3=y
 # CONFIG_STM32_USART4 is not set
 # CONFIG_STM32_USART5 is not set
 # CONFIG_STM32_USART6 is not set
+# CONFIG_STM32_SPI1 is not set
+# CONFIG_STM32_SPI2 is not set
+# CONFIG_STM32_SPI3 is not set
+# CONFIG_STM32_SPI4 is not set
+CONFIG_STM32_SPI5=y
+# CONFIG_STM32_SPI6 is not set
+# CONFIG_STM32_I2C1 is not set
+# CONFIG_STM32_I2C2 is not set
+# CONFIG_STM32_I2C3 is not set
+
+#
+# STM32F429IDISCO board
+#
+CONFIG_STM32F429IDISCO_BLUEBUTTON=y
+# CONFIG_STM32F429IDISCO_OTHERBUTTON is not set
 
 #
 # Processor Type
@@ -404,6 +419,9 @@ CONFIG_MTD_UCLINUX_PHYADDR=0x08120000
 #
 # Self-contained MTD device drivers
 #
+# CONFIG_MTD_DATAFLASH is not set
+# CONFIG_MTD_M25P80 is not set
+# CONFIG_MTD_SST25L is not set
 # CONFIG_MTD_SLRAM is not set
 # CONFIG_MTD_PHRAM is not set
 # CONFIG_MTD_MTDRAM is not set
@@ -454,6 +472,9 @@ CONFIG_HAVE_IDE=y
 # CONFIG_SCSI_NETLINK is not set
 # CONFIG_ATA is not set
 # CONFIG_MD is not set
+# CONFIG_B43LEGACY_DMA_AND_PIO_MODE is not set
+# CONFIG_B43LEGACY_DMA_MODE is not set
+# CONFIG_B43LEGACY_PIO_MODE is not set
 # CONFIG_PHONE is not set
 
 #
@@ -510,6 +531,7 @@ CONFIG_HW_CONSOLE=y
 #
 # CONFIG_SERIAL_AMBA_PL010 is not set
 # CONFIG_SERIAL_AMBA_PL011 is not set
+# CONFIG_SERIAL_MAX3100 is not set
 CONFIG_SERIAL_CORE=y
 CONFIG_SERIAL_CORE_CONSOLE=y
 CONFIG_SERIAL_STM32=y
@@ -523,7 +545,46 @@ CONFIG_DEVPTS_MULTIPLE_INSTANCES=y
 # CONFIG_RAW_DRIVER is not set
 # CONFIG_TCG_TPM is not set
 # CONFIG_I2C is not set
-# CONFIG_SPI is not set
+
+#
+# I2C Hardware Bus support
+#
+
+#
+# I2C system bus drivers (mostly embedded / system-on-chip)
+#
+# CONFIG_I2C_DESIGNWARE is not set
+# CONFIG_I2C_GPIO is not set
+# CONFIG_I2C_OCORES is not set
+# CONFIG_I2C_SIMTEC is not set
+# CONFIG_I2C_STM32 is not set
+
+#
+# Miscellaneous I2C Chip support
+#
+# CONFIG_SENSORS_TSL2550 is not set
+# CONFIG_I2C_DEBUG_CORE is not set
+# CONFIG_I2C_DEBUG_ALGO is not set
+# CONFIG_I2C_DEBUG_BUS is not set
+# CONFIG_I2C_DEBUG_CHIP is not set
+CONFIG_SPI=y
+CONFIG_SPI_MASTER=y
+
+#
+# SPI Master Controller Drivers
+#
+# CONFIG_SPI_BITBANG is not set
+# CONFIG_SPI_GPIO is not set
+# CONFIG_SPI_PL022 is not set
+CONFIG_SPI_STM32=y
+# CONFIG_SPI_XILINX is not set
+# CONFIG_SPI_DESIGNWARE is not set
+
+#
+# SPI Protocol Masters
+#
+CONFIG_SPI_SPIDEV=y
+# CONFIG_SPI_TLE62X0 is not set
 
 #
 # PPS support
@@ -541,6 +602,10 @@ CONFIG_GPIO_SYSFS=y
 #
 # I2C GPIO expanders:
 #
+# CONFIG_GPIO_MAX732X is not set
+# CONFIG_GPIO_PCA953X is not set
+# CONFIG_GPIO_PCF857X is not set
+# CONFIG_GPIO_ADP5588 is not set
 
 #
 # PCI GPIO expanders:
@@ -549,6 +614,9 @@ CONFIG_GPIO_SYSFS=y
 #
 # SPI GPIO expanders:
 #
+# CONFIG_GPIO_MAX7301 is not set
+# CONFIG_GPIO_MCP23S08 is not set
+# CONFIG_GPIO_MC33880 is not set
 
 #
 # AC97 GPIO expanders:
@@ -573,10 +641,23 @@ CONFIG_SSB_POSSIBLE=y
 # CONFIG_MFD_ASIC3 is not set
 # CONFIG_HTC_EGPIO is not set
 # CONFIG_HTC_PASIC3 is not set
+# CONFIG_TPS65010 is not set
+# CONFIG_TWL4030_CORE is not set
 # CONFIG_MFD_TMIO is not set
 # CONFIG_MFD_T7L66XB is not set
 # CONFIG_MFD_TC6387XB is not set
 # CONFIG_MFD_TC6393XB is not set
+# CONFIG_PMIC_DA903X is not set
+# CONFIG_PMIC_ADP5520 is not set
+# CONFIG_MFD_WM8400 is not set
+# CONFIG_MFD_WM831X is not set
+# CONFIG_MFD_WM8350_I2C is not set
+# CONFIG_MFD_PCF50633 is not set
+# CONFIG_MFD_MC13783 is not set
+# CONFIG_AB3100_CORE is not set
+# CONFIG_EZX_PCAP is not set
+# CONFIG_MFD_88PM8607 is not set
+# CONFIG_AB4500_CORE is not set
 # CONFIG_REGULATOR is not set
 # CONFIG_MEDIA_SUPPORT is not set
 
@@ -645,6 +726,7 @@ CONFIG_LOGO=y
 # CONFIG_LOGO_LINUX_MONO is not set
 # CONFIG_LOGO_LINUX_VGA16 is not set
 CONFIG_LOGO_LINUX_CLUT224=y
+# CONFIG_PANEL_NEC_NL8048HL11_01B_SPI is not set
 # CONFIG_SOUND is not set
 # CONFIG_HID_SUPPORT is not set
 # CONFIG_USB_SUPPORT is not set
