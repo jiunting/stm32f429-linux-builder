@@ -27,6 +27,7 @@ TODO list:
 Done:
 * Add an usart port (USART1 PA9(TX) PA10(RX) /dev/ttyS0 9600) to integrate communication module (Bluetooth, WIFI). 
 * Add SPI driver to communicate with L3GD20 3-axis gyroscope.
+* ST L3GD20 gyro testing applicaiton [l3gd20_demo]
 
 
 
