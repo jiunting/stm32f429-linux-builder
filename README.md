@@ -1,6 +1,6 @@
 uClinux for STM32F429I-DISCO Board
 ======================
-This project is a fork from jserv/stm32f429-linux-builder.(https://github.com/jserv/stm32f429-linux-builder)
+This project is a fork from [jserv/stm32f429-linux-builder.](https://github.com/jserv/stm32f429-linux-builder)
 Both of the kernel and u-boot fork from robutest/uclinux,u-boot.
 
 As following:
