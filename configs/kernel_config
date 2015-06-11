@@ -235,6 +235,7 @@ CONFIG_STM32_SPI5=y
 # CONFIG_STM32_I2C1 is not set
 # CONFIG_STM32_I2C2 is not set
 # CONFIG_STM32_I2C3 is not set
+# CONFIG_STM32_MAC is not set
 
 #
 # STM32F429IDISCO board

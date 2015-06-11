@@ -48,13 +48,13 @@ LIBS =
 
 
 # define the C object files
-SRCS += spidev_test.c
+SRCS += l3gd20_demo.c
 
 # define the C object files 
 OBJS = $(SRCS:.c=.o)
 
 # define the executable file
-MAIN = spidev_test
+MAIN = l3gd20_demo
 
 .PHONY : depend clean
 
