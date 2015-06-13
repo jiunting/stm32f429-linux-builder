@@ -3,6 +3,9 @@
 /busybox-*
 /u-boot
 /uclinux
+/linux-emcraft
+/linux-emcraft-linux-cortexm-1.12.0
+/linux-emcraft-master
 
 # generated
 /out

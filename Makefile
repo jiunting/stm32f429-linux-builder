@@ -55,6 +55,21 @@ include mk/flash.mak
 install: $(TARGETS)
 	$(shell ${FLASH_CMD})
 
+.PHONY += install_uboot
+include mk/flash.mak
+install-uboot: $(TARGETS)
+	$(shell ${FLASH_CMD_UBOOT})
+
+.PHONY += install_kernel
+include mk/flash.mak
+install-kernel: $(TARGETS)
+	$(shell ${FLASH_CMD_KERN})
+
+.PHONY += install_rootfs
+include mk/flash.mak
+install-rootfs: $(TARGETS)
+	$(shell ${FLASH_CMD_ROOTFS})
+
 .PHONY += clean
 clean: clean-uboot clean-kernel clean-rootfs
 	rm -rf $(target_out)
